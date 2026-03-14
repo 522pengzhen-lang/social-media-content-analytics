@@ -2,56 +2,72 @@
 
 ## Overview
 
-This project analyzes social media content performance from Xiaohongshu (RedNote) and Douyin (TikTok China).
+This project analyzes social media post performance using Python.  
+It evaluates engagement patterns based on topic, platform, and posting time.
 
-The goal is to explore what factors influence engagement in social media posts, including topic, posting time, platform differences, and title keywords.
+The system processes post data and calculates an **engagement score** using likes and comments.
 
-Using Python-based data analysis, the project identifies patterns in high-performing posts and generates simple recommendations for content strategy.
+## Features
 
----
+- Engagement score calculation
+- Topic performance analysis
+- Platform comparison
+- Posting time analysis
+- Keyword analysis
+- Content recommendation
 
-## Motivation
+## Project Structure
 
-As a content creator interested in data science, I wanted to understand what makes certain posts perform better than others.
+```
+social-media-content-analytics
+│
+├─ charts/
+│   ├─ platform_engagement.png
+│   ├─ time_engagement.png
+│   └─ topic_engagement.png
+│
+├─ data/
+│   └─ posts.csv
+│
+├─ analysis.py
+├─ keyword_analysis.py
+├─ recommendation.py
+├─ visualization.py
+└─ README.md
+```
 
-Instead of relying on intuition, this project applies data analysis and simple NLP techniques to extract insights from social media content.
+## Example Visualization
 
----
+Example analysis of engagement by posting time:
 
-## Dataset
+![Posting Time Engagement](charts/time_engagement.png)
 
-The dataset contains manually collected social media post data including:
+## Technologies Used
 
-- platform
-- title
-- topic
-- likes
-- comments
-- posting time
+- Python
+- Pandas
+- Matplotlib
 
-Example:
+## How to Run
 
-platform,title,topic,likes,comments,time  
-xhs,Study day at university,study,120,15,21  
-douyin,Study vlog before finals,study,430,86,20  
+Clone the repository:
 
----
+```
+git clone https://github.com/522pengzhen-lang/social-media-content-analytics.git
+```
 
-## Methodology
+Install dependencies:
 
-### Engagement Score
+```
+pip install pandas matplotlib
+```
 
-Engagement score is calculated as:
+Run the analysis:
 
-likes + 2 × comments
+```
+python visualization.py
+```
 
-This approximates the interaction level of a post.
+## Author
 
----
-
-### Analysis
-
-The project analyzes:
-
-- engagement by topic
-- engagement by platf
+Pengzhen Lang

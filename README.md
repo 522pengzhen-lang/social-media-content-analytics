@@ -1,5 +1,10 @@
 # Social Media Content Analytics & Recommendation System
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Project](https://img.shields.io/badge/Type-Data%20Analysis-lightgrey)
+
 ## Overview
 
 This project explores how different factors influence social media engagement.
